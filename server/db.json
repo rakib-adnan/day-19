@@ -1,0 +1,58 @@
+{
+  "devlopers": [
+    {
+      "id": 1,
+      "name": "Rakib Adnan",
+      "email": "rakibadnan059@gmail.com",
+      "cell": "0124524542",
+      "photo": "https://www.builtexbd.com/public/uploads/team/Team-memeber-01.png",
+      "skill": "2"
+    },
+    {
+      "id": 3,
+      "name": "Review",
+      "email": "rakibadnan059@gmail.com",
+      "cell": "0124524542",
+      "photo": "https://catseye.com.bd/pub/media/catalog/product/cache/567684e3cc8a45c771d2515d5dbe779e/c/e/ce_t_shirt_chhst87_9659_1_tk_1350_vat-_3_.jpg",
+      "skill": "5"
+    },
+    {
+      "id": 5,
+      "name": "Rakib Adnan",
+      "email": "rakibadnan059@gmail.com",
+      "cell": "0124524542",
+      "photo": "https://www.focasscore.com/wp-content/uploads/2018/03/team-member-4.jpg",
+      "skillid": "4"
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "skill": "PHP Devloper"
+    },
+    {
+      "id": 2,
+      "skill": "Laravel Devloper"
+    },
+    {
+      "id": 3,
+      "skill": "Django Devloper"
+    },
+    {
+      "id": 4,
+      "skill": "Python Devloper"
+    },
+    {
+      "id": 5,
+      "skill": "WordPress Devloper"
+    },
+    {
+      "id": 6,
+      "skill": "IOS Devloper"
+    },
+    {
+      "id": 7,
+      "skill": "JavaScript Devloper"
+    }
+  ]
+}

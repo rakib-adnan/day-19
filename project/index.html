@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devloper data</title>
+
+       <!-- font-awesome link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+      <!-- data table -->
+     <div class="devs">
+         <div class="head_btn">
+             <a class="btn btn-primary" data-bs-toggle="modal" href="#modal_add">Add New Devs</a>
+         </div>
+         <hr>
+      <div class="card">
+          <div class="card-body">
+            <table class=" table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Photo</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="devs_data">
+                
+                </tbody>
+            </table>
+          </div>
+      </div>
+
+     </div>
+
+     <!-- devs add modal -->
+
+     <div class="modal fade" id="modal_add">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                 <div class="modal-header mb-2">
+                     <h2>Add New Student</h2>
+                 </div>
+                 <div class="modal-body">
+                     <form action="" id="add_devs">
+                         <div class="form-group mb-3">
+                             <label for="">Name</label>
+                             <input id="name" class="form-control" type="text">
+                         </div>
+                         <div class="form-group mb-3">
+                             <label for="">Email</label>
+                             <input id="email" class="form-control" type="text">
+                         </div>
+                         <div class="form-group mb-3">
+                             <label for="">Cell</label>
+                             <input id="cell" class="form-control" type="text">
+                         </div>
+                         <div class="form-group mb-3">
+                             <label  for="">Photo</label>
+                             <input id="photo" class="form-control" type="text">
+                         </div>
+                         <div class="form-group mb-3">
+                             <label for="">Skill</label>
+                             <select class="form-control" name="" id="skill_list">
+                                 <option value="">-select-</option>
+                                 
+                             </select>
+                         </div>
+                         <div class="form-group mb-3">
+                            
+                             <input class="btn btn-success w-100" data-bs-dismiss="modal" type="submit" value="Add New">
+                         </div>
+                     </form>
+                 </div>
+                 
+             </div>
+         </div>
+     </div>
+     
+     <!-- modal-button -->
+     <div class="modal fade" id="modal_view">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+             <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Data View</h2>
+                </div>   
+                <div class="modal-body">
+                    <img id="view_img" class="shadow" src="" alt="">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Cell</th>
+                                <th>Skill</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="devs_view">
+                           
+                        </tbody>
+                    </table>
+                </div>   
+               
+             </div>
+         </div>
+     </div>
+
+     <div class="modal fade" id="modal_edit">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                
+                 <div class="modal-body">
+                    <div class="modal-body">
+                        <h2>Devloper From Edit</h2>
+                       <form action="" id="modal_edit">
+                           <div class="form-group mb-3">
+                               <label for="">Name</label>
+                               <input id="ename" class="form-control" type="text">
+                           </div>
+                           <div class="form-group mb-3">
+                               
+                               <input id="edit_id" class="form-control" type="text">
+                           </div>
+                           <div class="form-group mb-3">
+                               <label for="">Email</label>
+                               <input id="eemail" class="form-control" type="text">
+                           </div>
+                           <div class="form-group mb-3">
+                               <label for="">Cell</label>
+                               <input id="ecell" class="form-control" type="text">
+                           </div>
+                           <div class="form-group mb-3">
+                               <img class="w-100"  id="epre" src="" alt="">
+                               <label  for="">Photo</label>
+                               <input id="ephoto" class="form-control" type="text">
+                           </div>
+                           <div class="form-group mb-3">
+                            <label for="">Skill</label>
+                            <select class="form-control" name="" id="skill_edit">
+                                <option value="">-select-</option>
+                                <option value="">-Achem-</option>
+                                
+                            </select>
+                        </div>
+                           <div class="form-group mb-3">
+                              
+                               <input class="btn btn-success w-100" data-bs-dismiss="modal" type="submit" value="Done">
+                           </div>
+                       </form>
+                    </div>
+                 </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal_delete">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                 <div style="color: red;" class="modal-header justify-content-center">
+                     <h2 >Data Delete</h2>
+                 </div>
+                 <div class="modal-body">
+                     <h3>Are You Sure</h3>
+                 </div>
+                 <div class="modal-footer">
+                     <a onclick="delete_devs()" class="btn btn-success" href="">Yes</a>
+                     <a class="btn btn-info" data-bs-dismiss="modal" href="">No</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+        
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="./funtion.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
